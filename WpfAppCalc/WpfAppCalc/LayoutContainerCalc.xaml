@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfAppCalc.LayoutContainerCalc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppCalc"
+        mc:Ignorable="d"
+        Title="LayoutContainerCalc" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Grid.RowSpan="2" BorderThickness="3" BorderBrush="#FFD2D2D2">
+            <TextBlock TextAlignment="Right" Background="#FFD6EDE6" FontSize="50" Text="1 234,567"/>
+        </Border>
+        <UniformGrid Rows="6" Columns="4" Grid.Row="2" Grid.RowSpan="6">
+            <Button FontSize="15" Content="%" />
+            <Button FontSize="15" Content="CE" />
+            <Button FontSize="15" Content="C" />
+            <Button FontSize="15" Content=""  />
+            <Button FontSize="15" Content="1/x"/>
+            <Button FontSize="15" Content="x" />
+            <Button FontSize="15" Content="x" />
+            <Button FontSize="15" Content="+" />
+            <Button FontSize="15" Background="White" Content="7" />
+            <Button FontSize="15" Background="White" Content="8" />
+            <Button FontSize="15" Background="White" Content="9" />
+            <Button FontSize="15" Content="x" />
+            <Button FontSize="15" Background="White" Content="4" />
+            <Button FontSize="15" Background="White" Content="5" />
+            <Button FontSize="15" Background="White" Content="6" />
+            <Button FontSize="15" Content="-" />
+            <Button FontSize="15" Background="White" Content="1" />
+            <Button FontSize="15" Background="White" Content="2" />
+            <Button FontSize="15" Background="White" Content="3" />
+            <Button FontSize="15" Content="+" />
+            <Button FontSize="15" Background="White" Content="+/-" />
+            <Button FontSize="15" Background="White" Content="0" />
+            <Button FontSize="15" Background="White" Content="," />
+            <Button FontSize="15" Content="=" />
+        </UniformGrid>
+    </Grid>
+</Window>
