@@ -24,10 +24,10 @@
             <Button FontSize="15" Content="%" />
             <Button FontSize="15" Content="CE" />
             <Button FontSize="15" Content="C" />
-            <Button FontSize="15" Content=""  />
+            <Button FontSize="15" Content="←"  />
             <Button FontSize="15" Content="1/x"/>
-            <Button FontSize="15" Content="x" />
-            <Button FontSize="15" Content="x" />
+            <Button FontSize="15" Content="x²" />
+            <Button FontSize="15" Content="√x" />
             <Button FontSize="15" Content="+" />
             <Button FontSize="15" Background="White" Content="7" />
             <Button FontSize="15" Background="White" Content="8" />
