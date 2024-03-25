@@ -18,7 +18,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Border Grid.RowSpan="2" BorderThickness="3" BorderBrush="#FFD2D2D2">
-            <TextBlock TextAlignment="Right" Background="#FFD6EDE6" FontSize="50" Text="1 234,567"/>
+            <TextBlock TextAlignment="Right" Padding="0 35 5 0" Background="#FFD6EDE6" FontSize="50" Text="1 234,567"/>
         </Border>
         <UniformGrid Rows="6" Columns="4" Grid.Row="2" Grid.RowSpan="6">
             <Button FontSize="15" Content="%" />
