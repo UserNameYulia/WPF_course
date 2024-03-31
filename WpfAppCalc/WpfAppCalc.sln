@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppCalc", "WpfAppCalc\Wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{E661DE09-B87E-45E1-B980-FFDFAFC0ACD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Content.Converters", "4.Content.Converters\4.Content.Converters.csproj", "{5004F247-B038-4D3E-BBF2-4DE02B5F7427}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E661DE09-B87E-45E1-B980-FFDFAFC0ACD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E661DE09-B87E-45E1-B980-FFDFAFC0ACD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E661DE09-B87E-45E1-B980-FFDFAFC0ACD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5004F247-B038-4D3E-BBF2-4DE02B5F7427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5004F247-B038-4D3E-BBF2-4DE02B5F7427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5004F247-B038-4D3E-BBF2-4DE02B5F7427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5004F247-B038-4D3E-BBF2-4DE02B5F7427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
