@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,70 +31,95 @@ namespace Controls
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            if (textBlock != null)
+            if (textInBox != null)
             {
-                textBlock.Foreground = Brushes.Black;
+                textInBox.Foreground = Brushes.Black;
             }
         }
 
         private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
-            if (textBlock != null)
+            if (textInBox != null)
             {
-                textBlock.Foreground = Brushes.Red;
+                textInBox.Foreground = Brushes.Red;
             }
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (textBlock != null)
+            if (textInBox != null)
             {
-                textBlock.FontFamily = new FontFamily(((sender as ComboBox).SelectedItem as TextBlock).Text);
+                textInBox.FontFamily = new FontFamily(((sender as ComboBox).SelectedItem as TextBlock).Text);
             }
         }
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-            if (textBlock != null)
+            if (textInBox != null)
             {
-                textBlock.FontSize = double.Parse(((sender as ComboBox).SelectedItem as TextBlock).Text, CultureInfo.InvariantCulture);
+                textInBox.FontSize = double.Parse(((sender as ComboBox).SelectedItem as TextBlock).Text, CultureInfo.InvariantCulture);
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBlock.FontWeight != FontWeights.Bold)
+            if (textInBox.FontWeight != FontWeights.Bold)
             {
-                textBlock.FontWeight = FontWeights.Bold;
+                textInBox.FontWeight = FontWeights.Bold;
             }
             else
             {
-                textBlock.FontWeight = FontWeights.Normal;
+                textInBox.FontWeight = FontWeights.Normal;
             }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (textBlock.FontStyle != FontStyles.Italic)
+            if (textInBox.FontStyle != FontStyles.Italic)
             {
-                textBlock.FontStyle = FontStyles.Italic;
+                textInBox.FontStyle = FontStyles.Italic;
             }
             else
             {
-                textBlock.FontStyle = FontStyles.Normal;
+                textInBox.FontStyle = FontStyles.Normal;
             }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (textBlock.TextDecorations != TextDecorations.Underline)
+            if (textInBox.TextDecorations != TextDecorations.Underline)
             {
-                textBlock.TextDecorations = TextDecorations.Underline;
+                textInBox.TextDecorations = TextDecorations.Underline;
             }
             else
             {
-                textBlock.TextDecorations = null;
+                textInBox.TextDecorations = null;
             }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Текстовые файлы *.txt|*.txt|Все файлы *.*|*.*";
+            if (dialog.ShowDialog()  == true)
+            {
+                textInBox.Text = File.ReadAllText(dialog.FileName);
+            }
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Текстовые файлы *.txt|*.txt|Все файлы *.*|*.*";
+            if (dialog.ShowDialog() == true)
+            {
+                File.WriteAllText(dialog.FileName, textInBox.Text);
+            }
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

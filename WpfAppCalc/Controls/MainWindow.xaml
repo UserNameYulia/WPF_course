@@ -5,13 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MinHeight="300" MinWidth="500">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <ToolBarTray>
+        <Menu>
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть" Click="MenuItem_Click"/>
+                <MenuItem Header="Сохранить" Click="MenuItem_Click_1"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="MenuItem_Click_2"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray Grid.Row="1">
             <ToolBar>
                 <ComboBox SelectedIndex="0" Width="150" SelectionChanged="ComboBox_SelectionChanged">
                     <TextBlock Text="Arial"/>
@@ -44,6 +53,6 @@
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TextBox Name="textBlock" Padding="5" Margin="5" Grid.Row="1" FontSize="16" FontFamily="Arial"/>
+        <TextBox Name="textInBox" Padding="5" Margin="5" Grid.Row="2" FontSize="16" FontFamily="Arial"/>
     </Grid>
 </Window>
