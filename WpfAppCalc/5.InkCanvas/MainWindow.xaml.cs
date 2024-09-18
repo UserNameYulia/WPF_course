@@ -105,5 +105,20 @@ namespace _5.InkCanvas
                 Color.FromArgb((byte)rnd.Next(256), (byte)rnd.Next(256), (byte)rnd.Next(256), (byte)rnd.Next(256));
 
         }
+
+        private void OpenExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            MenuItem_Click(sender, e);
+        }
+
+        private void SaveExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            MenuItem_Click_1(sender, e);
+        }
+
+        private void ExitExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

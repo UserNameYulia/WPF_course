@@ -13,11 +13,16 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu>
+            <Menu.CommandBindings>
+                <CommandBinding Command="Open" Executed="OpenExecuted"/>
+                <CommandBinding Command="Save" Executed="SaveExecuted"/>
+                <CommandBinding Command="local:Commands.Exit" Executed="ExitExecuted"/>
+            </Menu.CommandBindings>
             <MenuItem Header="Файл">
-                <MenuItem Header="Открыть" Click="MenuItem_Click"/>
-                <MenuItem Header="Сохранить" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Открыть" Command="Open"/> <!--Click="MenuItem_Click"-->
+                <MenuItem Header="Сохранить" Command="Save"/> <!--Click="MenuItem_Click_1"-->
                 <Separator/>
-                <MenuItem Header="Выход" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Выход" Command="local:Commands.Exit"/> <!--Click="MenuItem_Click_2"/>-->
             </MenuItem>
         </Menu>
         <ToolBarTray Grid.Row="1">
