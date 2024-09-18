@@ -49,7 +49,7 @@ namespace Controls
         {
             if (textInBox != null)
             {
-                textInBox.FontFamily = new FontFamily(((sender as ComboBox).SelectedItem as TextBlock).Text);
+                textInBox.FontFamily = new FontFamily(((sender as ComboBox).SelectedItem).ToString());
             }
         }
 
@@ -57,7 +57,7 @@ namespace Controls
         {
             if (textInBox != null)
             {
-                textInBox.FontSize = double.Parse(((sender as ComboBox).SelectedItem as TextBlock).Text, CultureInfo.InvariantCulture);
+                textInBox.FontSize = double.Parse(((sender as ComboBox).SelectedItem).ToString(), CultureInfo.InvariantCulture);
             }
         }
 
