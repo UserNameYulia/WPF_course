@@ -5,35 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="300" MinWidth="500">
+        Title="MainWindow" Height="450" Width="800" MinHeight="300" MinWidth="500"
+        Style="{DynamicResource WindowStyle}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Menu>
+        <Menu Style="{DynamicResource MenuStyle}">
             <MenuItem Header="Файл">
-                <MenuItem Header="Открыть" Click="MenuItem_Click"/>
-                <MenuItem Header="Сохранить" Click="MenuItem_Click_1"/>
+                <MenuItem Style="{DynamicResource MenuItemStyle}" Header="Открыть" Click="MenuItem_Click"/>
+                <MenuItem Style="{DynamicResource MenuItemStyle}" Header="Сохранить" Click="MenuItem_Click_1"/>
                 <Separator/>
-                <MenuItem Header="Выход" Click="MenuItem_Click_2"/>
+                <MenuItem Style="{DynamicResource MenuItemStyle}" Header="Выход" Click="MenuItem_Click_2"/>
             </MenuItem>
         </Menu>
-        <ToolBarTray Grid.Row="1">
-            <ToolBar>
-                <ComboBox ItemsSource="{StaticResource fonts}" SelectedIndex="0" Width="150" SelectionChanged="ComboBox_SelectionChanged">
+        <ToolBarTray Grid.Row="1" Style="{DynamicResource ToolbarStyle}">
+            <ToolBar Style="{DynamicResource ToolbarStyle}">
+                <ComboBox Style="{DynamicResource ComboboxStyle}" ItemsSource="{StaticResource fonts}" SelectedIndex="0" Width="150" SelectionChanged="ComboBox_SelectionChanged">
                     <!--<TextBlock Text="Arial"/>
                     <TextBlock Text="Times New Roman"/>
                     <TextBlock Text="Verdana"/>-->
                 </ComboBox>
-                <ComboBox ItemsSource="{StaticResource sizes}" SelectedIndex="2" Width="50" SelectionChanged="ComboBox_SelectionChanged_1">
+                <ComboBox Style="{DynamicResource ComboboxStyle}" ItemsSource="{StaticResource sizes}" SelectedIndex="2" SelectionChanged="ComboBox_SelectionChanged_1">
                     <!--<TextBlock Text="12"/>
                     <TextBlock Text="14"/>
                     <TextBlock Text="16"/>-->
                 </ComboBox>
+                <ComboBox x:Name="StyleBox" Style="{DynamicResource ComboboxStyle}"/>
             </ToolBar>
-            <ToolBar>
+            <ToolBar Style="{DynamicResource ToolbarStyle}">
                 <Button Name="buttonBold" Margin="2" Click="Button_Click">
                     <Image Source="Data\bold.png"/>
                 </Button>
@@ -46,13 +48,13 @@
                     <Image Source="Data\underline.png"/>
                 </Button>
             </ToolBar>
-            <ToolBar>
+            <ToolBar Style="{DynamicResource ToolbarStyle}">
                 <StackPanel>
                     <RadioButton Content="Black" Checked="RadioButton_Checked" IsChecked="True"/>
                     <RadioButton Content="Red" Checked="RadioButton_Checked_1"/>
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TextBox Name="textInBox" Padding="5" Margin="5" Grid.Row="2" FontSize="16" FontFamily="Arial"/>
+        <TextBox Style="{DynamicResource TextboxStyle}" Name="textInBox" Padding="5" Margin="5" Grid.Row="2" FontSize="16" FontFamily="Arial" TextWrapping="Wrap"/>
     </Grid>
 </Window>

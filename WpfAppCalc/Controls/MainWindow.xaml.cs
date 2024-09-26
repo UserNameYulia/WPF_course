@@ -3,19 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Controls
 {
@@ -27,7 +17,27 @@ namespace Controls
         public MainWindow()
         {
             InitializeComponent();
+            List<string> styles = new List<string>
+            {
+                "Light",
+                "Dark"
+            };
+            StyleBox.ItemsSource = styles;
+            StyleBox.SelectionChanged += StyleBox_SelectionChanged;
+            StyleBox.SelectedIndex = 0;
         }
+
+        private void StyleBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Uri resourceLocator = new Uri("Light.xaml", UriKind.Relative);
+            if(StyleBox.SelectedIndex == 1)
+            {
+                resourceLocator = new Uri("Dark.xaml", UriKind.Relative);
+            }
+
+            ResourceDictionary resource = Application.LoadComponent(resourceLocator) as ResourceDictionary;
+            Application.Current.Resources.Clear();
+            Application.Current.Resources.MergedDictionaries.Add(resource);        }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
