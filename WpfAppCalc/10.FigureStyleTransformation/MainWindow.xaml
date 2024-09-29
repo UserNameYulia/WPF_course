@@ -1,0 +1,96 @@
+﻿<Window x:Class="_10.FigureStyleTransformation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10.FigureStyleTransformation"
+        mc:Ignorable="d"
+        Title="Отражение" Height="600" Width="600" Background="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="1" Width="200" Height="200">
+            <Border.Background>
+                <VisualBrush Visual="{Binding ElementName=img}">
+                    <VisualBrush.Transform>
+                        <ScaleTransform ScaleY="-1" CenterX="100" CenterY="100"/>
+                    </VisualBrush.Transform>
+                </VisualBrush>
+            </Border.Background>
+            <Border.OpacityMask>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0.7" Color="Black"/>
+                    <GradientStop Offset="0" Color="Transparent"/>
+                </LinearGradientBrush>
+            </Border.OpacityMask>
+            <Border.RenderTransform>
+                <SkewTransform AngleY="10" AngleX="10" CenterY="180"/>
+            </Border.RenderTransform>
+        </Border>
+        <Border Grid.Row="1" Width="200" Height="200">
+            <Border.Background>
+                <VisualBrush Visual="{Binding ElementName=img}">
+                </VisualBrush>
+            </Border.Background>
+            <Border.OpacityMask>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" >
+                    <GradientStop Offset="0.9" Color="Black"/>
+                    <GradientStop Offset="0" Color="Transparent"/>
+                </LinearGradientBrush>
+            </Border.OpacityMask>
+            <Border.RenderTransform>
+                <SkewTransform AngleY="5" CenterX="180"/>
+            </Border.RenderTransform>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="2" Height="200">
+            <Image x:Name="img"  Source="Images/cover.jpg" Width="200"/>
+            <Border.Effect>
+                <DropShadowEffect Color="White" Direction="10" ShadowDepth="10" Opacity="0.3"/>
+            </Border.Effect>
+            <Border.RenderTransform>
+                <SkewTransform AngleY="10"/>
+            </Border.RenderTransform>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="2" Width="200" Height="200">
+            <Border.Background>
+                <VisualBrush Visual="{Binding ElementName=img}">
+                    <VisualBrush.Transform>
+                        <ScaleTransform ScaleY="-1" CenterX="100" CenterY="100"/>
+                    </VisualBrush.Transform>
+                </VisualBrush>
+            </Border.Background>
+            <Border.OpacityMask>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="Black"/>
+                    <GradientStop Offset="0.7" Color="Transparent"/>
+                </LinearGradientBrush>
+            </Border.OpacityMask>
+            <Border.RenderTransform>
+                <SkewTransform AngleY="10" AngleX="-10" CenterX="-20"/>
+            </Border.RenderTransform>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" Width="200" Height="200">
+            <Border.Background>
+                <VisualBrush Visual="{Binding ElementName=img}">
+                </VisualBrush>
+            </Border.Background>
+            <Border.OpacityMask>
+                <LinearGradientBrush StartPoint="1,1" EndPoint="0,0" >
+                    <GradientStop Offset="0" Color="Transparent"/>
+                    <GradientStop Offset="0.9" Color="Black"/>
+                </LinearGradientBrush>
+            </Border.OpacityMask>
+            <Border.RenderTransform>
+                <SkewTransform AngleY="15" CenterX="-140"/>
+            </Border.RenderTransform>
+        </Border>
+    </Grid>
+</Window>

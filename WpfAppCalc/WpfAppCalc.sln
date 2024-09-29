@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.Content.Converters", "4.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.InkCanvas", "5.InkCanvas\5.InkCanvas.csproj", "{089586B5-476E-484F-B1B8-E0BCA183C8B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.WeatherControl", "6.WeatherControl\6.WeatherControl.csproj", "{6D668BEB-9638-452E-BCA0-D1E30DF04E01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.WeatherControl", "6.WeatherControl\6.WeatherControl.csproj", "{6D668BEB-9638-452E-BCA0-D1E30DF04E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.FigureStyleTransformation", "10.FigureStyleTransformation\10.FigureStyleTransformation.csproj", "{80D8FB46-6737-4465-9CD8-D0CF21BBD378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6D668BEB-9638-452E-BCA0-D1E30DF04E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D668BEB-9638-452E-BCA0-D1E30DF04E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D668BEB-9638-452E-BCA0-D1E30DF04E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D8FB46-6737-4465-9CD8-D0CF21BBD378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D8FB46-6737-4465-9CD8-D0CF21BBD378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D8FB46-6737-4465-9CD8-D0CF21BBD378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D8FB46-6737-4465-9CD8-D0CF21BBD378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
