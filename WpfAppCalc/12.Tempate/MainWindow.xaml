@@ -1,0 +1,39 @@
+﻿<Window x:Class="_12.Tempate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_12.Tempate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate TargetType="CheckBox" x:Key="checkbox">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Rectangle Width="25" Height="25" RadiusX="5" RadiusY="5" Stroke="Gray" StrokeThickness="3"/>
+                <TextBlock Text="{TemplateBinding Content}" Grid.Row="1" HorizontalAlignment="Center" FontSize="15" Foreground="Gray"/>
+                <Path x:Name="path1" Opacity="0" Data="M115.41157,22.900153 L132.0189,38.920287" Fill="Gray" Margin="115,23,114,22" Stroke="Gray" StrokeThickness="3" Stretch="Fill" />
+                <Path x:Name="path2" Opacity="0" Data="M130.5,24.04 L116.16667,38.410001" Fill="Gray" Margin="116,24,115,23" Stroke="Gray" StrokeThickness="3" Stretch="Fill" />
+                <Ellipse x:Name="ellips" Opacity="0" Margin="118,26,117,26" Stroke="Gray" Fill="Gray"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Opacity" Value="1" TargetName="path1"/>
+                    <Setter Property="Opacity" Value="1" TargetName="path2"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="{x:Null}">
+                    <Setter Property="Opacity" Value="1" TargetName="ellips"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+    </Window.Resources>
+    <UniformGrid Columns="3" Margin="30" Rows="3">
+        <CheckBox Content="Checked" Template="{StaticResource checkbox}"/>
+        <CheckBox Content="UnChecked" IsChecked="True" Template="{StaticResource checkbox}"/>
+        <CheckBox Content="Indeterminate" IsChecked="{x:Null}" Template="{StaticResource checkbox}"/>
+    </UniformGrid>
+</Window>
