@@ -1,0 +1,33 @@
+﻿<Window x:Class="_11.Paths.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_11.Paths"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions/>
+        <Path Fill="Red" Stroke="Black">
+            <Path.Data>
+                <EllipseGeometry Center="400,200" RadiusX="100" RadiusY="100"/>
+            </Path.Data>
+        </Path>
+        <Path Fill="White" Stroke="Black">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Exclude">
+                    <CombinedGeometry.Geometry1>
+                        <EllipseGeometry Center="400,200" RadiusX="80" RadiusY="80"/>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="320 190 160 20">
+                            <RectangleGeometry.Transform>
+                                <RotateTransform Angle="135" CenterX="400" CenterY="200"/>
+                            </RectangleGeometry.Transform>
+                        </RectangleGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+    </Grid>
+</Window>
