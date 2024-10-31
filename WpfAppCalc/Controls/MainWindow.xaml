@@ -23,12 +23,12 @@
         </Menu>
         <ToolBarTray Grid.Row="1" Style="{DynamicResource ToolbarStyle}">
             <ToolBar Style="{DynamicResource ToolbarStyle}">
-                <ComboBox Style="{DynamicResource ComboboxStyle}" ItemsSource="{StaticResource fonts}" SelectedIndex="0" Width="150" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBox Style="{DynamicResource ComboboxStyle}" ItemsSource="{Binding Source={x:Static local:CustomFont.CustomFamily}}"  SelectedIndex="0" Width="150" SelectionChanged="ComboBox_SelectionChanged"><!--ItemsSource="{StaticResource fonts}"-->
                     <!--<TextBlock Text="Arial"/>
                     <TextBlock Text="Times New Roman"/>
                     <TextBlock Text="Verdana"/>-->
                 </ComboBox>
-                <ComboBox Style="{DynamicResource ComboboxStyle}" ItemsSource="{StaticResource sizes}" SelectedIndex="2" SelectionChanged="ComboBox_SelectionChanged_1">
+                <ComboBox Style="{DynamicResource ComboboxStyle}" ItemsSource="{Binding Source={x:Static local:CustomFont.CustomSize}}"  SelectedIndex="2" SelectionChanged="ComboBox_SelectionChanged_1"><!--ItemsSource="{StaticResource sizes}"-->
                     <!--<TextBlock Text="12"/>
                     <TextBlock Text="14"/>
                     <TextBlock Text="16"/>-->

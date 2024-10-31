@@ -132,4 +132,17 @@ namespace Controls
             Application.Current.Shutdown();
         }
     }
+
+    static public class CustomFont
+    {
+        public static List<int> CustomSize
+        {
+            get { return new List<int> { 12, 14, 16 }; }
+        }
+
+        public static List<string> CustomFamily
+        {
+            get { return new List<string> { "Arial", "Times New Roman", "Verdana" }; }
+        }
+    }
 }
