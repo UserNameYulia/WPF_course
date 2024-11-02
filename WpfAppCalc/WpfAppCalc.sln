@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.WeatherControl", "6.Weath
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.FigureStyleTransformation", "10.FigureStyleTransformation\10.FigureStyleTransformation.csproj", "{80D8FB46-6737-4465-9CD8-D0CF21BBD378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Paths", "11.Paths\11.Paths.csproj", "{352C21A4-9480-4E3A-BCE7-084E38FF118E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.Paths", "11.Paths\11.Paths.csproj", "{352C21A4-9480-4E3A-BCE7-084E38FF118E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Tempate", "12.Tempate\12.Tempate.csproj", "{B495BC96-B97E-4B7A-A120-F7B3EFD13AA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.Tempate", "12.Tempate\12.Tempate.csproj", "{B495BC96-B97E-4B7A-A120-F7B3EFD13AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.DataTemplate", "14.DataTemplate\14.DataTemplate.csproj", "{D7BDC457-E28E-4044-88E1-8AA94A71BCFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{B495BC96-B97E-4B7A-A120-F7B3EFD13AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B495BC96-B97E-4B7A-A120-F7B3EFD13AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B495BC96-B97E-4B7A-A120-F7B3EFD13AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BDC457-E28E-4044-88E1-8AA94A71BCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BDC457-E28E-4044-88E1-8AA94A71BCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BDC457-E28E-4044-88E1-8AA94A71BCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BDC457-E28E-4044-88E1-8AA94A71BCFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
