@@ -1,0 +1,180 @@
+﻿<Window x:Class="_15.DocumentsAndPrint.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_15.DocumentsAndPrint"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph TextAlignment="Center" IsEnabled="True">
+                    <Bold>
+                        <Hyperlink NavigateUri="https://habr.com/ru/articles/731028/">
+                            Мой поиск аналога Microsoft Visio
+                        </Hyperlink>
+                    </Bold>
+                </Paragraph>
+                <Paragraph>
+                    <Italic>
+                        <Underline>
+                            Как проходил поиск
+                        </Underline>
+                    </Italic>
+                </Paragraph>
+                <Paragraph >
+                    Естественно, я начал с изучения бесплатных программ, которые давно существуют на рынке. Про них есть много статей, обзоров и видео роликов по работе внутри приложения. К тому же, их проще скачать и изучать самостоятельно.
+                    <Run Background="LightBlue">
+                        В результате поисков остановился на трех вариантах:
+                    </Run>
+                </Paragraph>
+                <List MarkerStyle="Decimal" >
+                    <ListItem>
+                        <Paragraph>
+                            LibreOffice Draw
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            diagrams.net
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Dia
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>
+                    Пример:
+                    <Floater>
+                        <BlockUIContainer>
+                            <Image Source="Data/3.png"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Table >
+                    <Table.Columns>
+                        <TableColumn Width="1.7*"/>
+                        <TableColumn Width="1*"/>
+                        <TableColumn Width="1*"/>
+                        <TableColumn Width="1*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Критерий / Продукт
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    LibreOffice Draw
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    diagrams.net
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Dia
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Кроссплатформенность
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Импорт схем Visio
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    -
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Шаблоны и библиотеки
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    -
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Шаблоны и библиотеки
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    -
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
