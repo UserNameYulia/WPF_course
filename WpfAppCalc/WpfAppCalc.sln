@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.DataTemplate", "14.DataT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.DocumentsAndPrint", "15.DocumentsAndPrint\15.DocumentsAndPrint.csproj", "{AFDC9565-85ED-46B1-8074-B28BDA3A05FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.Animation", "16.Animation\16.Animation.csproj", "{0CFD1509-CC19-4E22-A9A3-742B524EF636}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{AFDC9565-85ED-46B1-8074-B28BDA3A05FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDC9565-85ED-46B1-8074-B28BDA3A05FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDC9565-85ED-46B1-8074-B28BDA3A05FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CFD1509-CC19-4E22-A9A3-742B524EF636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CFD1509-CC19-4E22-A9A3-742B524EF636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CFD1509-CC19-4E22-A9A3-742B524EF636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CFD1509-CC19-4E22-A9A3-742B524EF636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
