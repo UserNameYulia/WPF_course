@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17.CustomUserControl", "17.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.FourSide3D", "18.FourSide3D\18.FourSide3D.csproj", "{1664EC4E-D122-41FA-8183-50874EE05A77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.MVVM", "19.MVVM\19.MVVM.csproj", "{42368F82-F51F-427E-9B7E-73E5B4C001E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{1664EC4E-D122-41FA-8183-50874EE05A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1664EC4E-D122-41FA-8183-50874EE05A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1664EC4E-D122-41FA-8183-50874EE05A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42368F82-F51F-427E-9B7E-73E5B4C001E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42368F82-F51F-427E-9B7E-73E5B4C001E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42368F82-F51F-427E-9B7E-73E5B4C001E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42368F82-F51F-427E-9B7E-73E5B4C001E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
